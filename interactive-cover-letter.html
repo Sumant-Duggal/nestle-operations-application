@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nestle Operations Interactive Application</title>
+    <style>
+        :root {
+            --bg: #0d0707;
+            --panel: #171010;
+            --ink: #f6ece6;
+            --muted: #cab9ae;
+            --accent: #ff4500;
+            --border: rgba(255, 255, 255, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Georgia, "Times New Roman", serif;
+            background:
+                radial-gradient(circle at top, rgba(185, 32, 18, 0.5), transparent 38%),
+                linear-gradient(180deg, #2b0d0b 0%, var(--bg) 58%);
+            color: var(--ink);
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 18mm 18mm 16mm;
+        }
+
+        .frame {
+            border: 1px solid var(--border);
+            border-radius: 28px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.02));
+            padding: 18mm 16mm 14mm;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+        }
+
+        .eyebrow {
+            margin: 0 0 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            letter-spacing: 0.35em;
+            text-transform: uppercase;
+            color: var(--accent);
+        }
+
+        h1 {
+            margin: 0 0 16px;
+            font-size: 38px;
+            line-height: 1.04;
+            font-weight: 500;
+        }
+
+        .intro {
+            margin: 0 0 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            line-height: 1.75;
+            color: var(--muted);
+            max-width: 148mm;
+        }
+
+        .cta {
+            display: inline-block;
+            margin: 0 0 18px;
+            padding: 14px 18px;
+            border-radius: 999px;
+            background: var(--accent);
+            color: #140907;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .link-line {
+            margin: 0 0 24px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            line-height: 1.7;
+            color: var(--muted);
+        }
+
+        .link-line a {
+            color: var(--ink);
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.28);
+        }
+
+        .preview {
+            border: 1px solid var(--border);
+            border-radius: 22px;
+            overflow: hidden;
+            background: var(--panel);
+        }
+
+        .preview img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        strong {
+            color: var(--ink);
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="frame">
+            <p class="eyebrow">Interactive Application</p>
+            <h1>A digital cover letter for the Nestle Operations &amp; Supply Chain application.</h1>
+            <p class="intro">
+                In place of a traditional cover letter, I created a short interactive application that shows how I would contribute to the operations brief:
+                connecting planning, packaging, quality, logistics, and data-led improvement while bringing five-plus years of FMCG experience,
+                an IESE MBA in progress, and a bias for turning operational data into practical action.
+            </p>
+            <a class="cta" href="https://nestle-operations-application.vercel.app/">View Interactive Application</a>
+            <p class="link-line">
+                Direct link:
+                <a href="https://nestle-operations-application.vercel.app/">nestle-operations-application.vercel.app/</a>
+            </p>
+            <div class="preview">
+                <img src="./site-preview.png" alt="Preview of the Nestle Operations interactive application website">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
